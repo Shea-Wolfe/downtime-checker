@@ -1,0 +1,6 @@
+<form action="{% url 'status' %}" method="post">
+  {% csrf_token %}
+  <legend>What site would you like to check?</legend>
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-primary" value='submit new bookmark'>Submit</button>
+</form>
