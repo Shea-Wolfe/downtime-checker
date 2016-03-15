@@ -1,7 +1,5 @@
-from django.forms import form, URLField
+from django.forms import Form, URLField
 
-class URLForm(form):
+class URLForm(Form):
 
     url = URLField()
-
-    
